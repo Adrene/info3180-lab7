@@ -34,6 +34,10 @@ def thumbnails():
     response.header['COntent-Type'] = 'application/json'
     
     return response
+
+app.route('/thumbnails/view')
+def thumbnailsView():
+    return render_template('thumbnails.html')
     
 
 ###
